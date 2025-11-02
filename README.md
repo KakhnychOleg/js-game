@@ -53,7 +53,3 @@ snake-game/
 3. Don't hit walls or yourself
 4. Speed increases smoothly with each food eaten
 5. Beat your high score!
-
----
-
-Created to showcase frontend development skills 💜
