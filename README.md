@@ -1,6 +1,6 @@
 # 🐍 Snake - Classic Game
 
-Modern implementation of the classic Snake game with a beautiful interface for a frontend developer portfolio.
+Modern implementation of the classic Snake game with a beautiful interface.
 
 ## 🎮 Features
 
