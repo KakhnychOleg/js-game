@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake - Classic Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>🐍 Snake Game</h1>
+            <div class="theme-switcher">
+                <button class="theme-btn active" data-theme="classic">Classic</button>
+                <button class="theme-btn" data-theme="neon">Neon</button>
+                <button class="theme-btn" data-theme="matrix">Matrix</button>
+            </div>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">Score:</span>
+                    <span id="score" class="value">0</span>
+                </div>
+                <div class="score-item combo-item" id="comboContainer">
+                    <span class="label">Combo:</span>
+                    <span id="combo" class="value">0x</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">Best:</span>
+                    <span id="highScore" class="value">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+            
+            <div id="gameOver" class="game-over hidden">
+                <h2>Game Over!</h2>
+                <p>Your score: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">Play Again</button>
+            </div>
+
+            <div id="startScreen" class="start-screen">
+                <h2>Welcome!</h2>
+                <p>Control the snake with arrow keys</p>
+                <ul class="instructions">
+                    <li>🎯 Collect food to grow</li>
+                    <li>⚠️ Don't hit walls or yourself</li>
+                    <li>🏆 Beat your high score!</li>
+                </ul>
+                <button id="startBtn" class="btn btn-primary">Start Game</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h3>Controls:</h3>
+            <div class="control-buttons">
+                <button class="control-btn" data-direction="up">↑</button>
+                <div class="control-row">
+                    <button class="control-btn" data-direction="left">←</button>
+                    <button class="control-btn" data-direction="down">↓</button>
+                    <button class="control-btn" data-direction="right">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
+
